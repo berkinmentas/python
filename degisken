@@ -1,0 +1,5 @@
+isim = input("İsminizi giriniz: ")
+soyad = input("Soyadınızı giriniz: ")
+
+for i in range (1,11):
+    print(isim + soyad)
