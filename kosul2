@@ -1,0 +1,18 @@
+# Vücut Kitle İndeksi
+# 18, 5 kg/m.'nin altında olanlar: Zayıf
+# 18.5 – 25 kg/m. arasında olanlar: Normal kilolu
+# 25+ arasında olanlar: Fazla kilolu
+
+boy = float(input("Boyunuzu metre cinsinden yazınız: "))
+kilo = int(input("Kilonuzu yazınız: "))
+
+vki = kilo / (boy * boy)
+
+print("Vücut kitle indeksiniz: {}".format(vki))
+
+if vki < 18.5:
+    print ("Fazla zayıfsınız biraz kilo almalısınız.")
+elif vki < 25:
+    print ("Vücut kitle inkesiniz normal")
+else :
+    print("Fazla kilolusunuz biraz kilo vermelisiniz.")
