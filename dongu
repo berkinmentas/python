@@ -1,0 +1,20 @@
+from random import*
+
+secilen = randint(1,100)
+sayac = 0
+
+while True:
+    sayac +=1
+    sayi = int(input("0 dan 100 e Kadar bir sayı giriniz: "))
+
+    if sayi < secilen:
+        print("Daha büyük bir sayı giriniz.")
+        continue
+    elif sayi > secilen:
+        print ("Daha küçük bir sayı giriniz.")
+        continue
+    else:
+        print("Tebrikler Doğru sayıyı buldunuz.")
+        print("Tahmin sayınız:  {}".format(sayac))
+        print("Seçilen sayı: {}".format(secilen))
+        break
